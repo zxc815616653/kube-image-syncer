@@ -1,9 +1,12 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - docker.elastic.co/elasticsearch/elasticsearch:8.14.1
+  - docker.elastic.co/logstash/logstash:8.14.1
+  - docker.elastic.co/kibana/kibana:8.14.1
+  - docker.elastic.co/beats/filebeat:8.14.1
