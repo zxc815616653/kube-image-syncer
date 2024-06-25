@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - library/nginx:1.26
